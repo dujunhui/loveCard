@@ -1,0 +1,93 @@
+<view class="component_page">
+  <scroll-view scroll-y style="height:100%">
+    <view class="topImgBox">
+      <image
+        class="img"
+        src="/img/vs/vs-1.jpg"
+        mode="widthFix"
+      ></image>
+    </view>
+    <view class="btnBox">
+      <button class="leftBtn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-people="1" >
+        <image
+          class="img"
+          src="/img/vs/vs-2.jpg"
+          mode="widthFix"
+        ></image>
+      </button>
+      <button class="rightBtn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-people="2" >
+        <image
+          class="img"
+          src="/img/vs/vs-3.jpg"
+          mode="widthFix"
+        ></image>
+      </button>
+    </view>
+    
+    <view class="conBox">
+      <view class="leftCon" >
+        <view class="lc-top">{{xlNum}}</view>
+        <view class="zanBox">
+          <image
+            class="userinfo-avatar u1"
+            mode="cover"
+            src="{{xl[0].avatarUrl}}"
+          ></image>
+          <image
+            class="userinfo-avatar u2"
+            mode="cover"
+            src="{{xl[1].avatarUrl}}"
+          ></image>
+          <image
+            class="userinfo-avatar u3"
+            mode="cover"
+            src="{{xl[2].avatarUrl}}"
+          ></image>
+        </view>
+      </view>
+
+      <view class="rightCon">
+        <view class="rc-top">{{xnNum}}</view>
+        <view class="zanBox">
+          <image
+            class="userinfo-avatar u1"
+            mode="cover"
+            src="{{xn[0].avatarUrl}}"
+          ></image>
+          <image
+            class="userinfo-avatar  u2"
+            mode="cover"
+            src="{{xn[1].avatarUrl}}"
+          ></image>
+          <image
+            class="userinfo-avatar u3"
+            mode="cover"
+            src="{{xn[2].avatarUrl}}"
+          ></image>
+        </view>
+      </view>
+    </view>
+    
+    <view class="inputBox">
+      <input class="inputView" bindinput="bindKeyInput" value='{{inputValue}}' maxlength="100" placeholder="为新郎新娘送上祝福" />
+      <button class="submitBtn" open-type='getUserInfo'  bindgetuserinfo="bindGetUserInfo" data-people="3">
+        <image
+          class="img"
+          src="/img/vs/submit.png"
+          mode="widthFix"
+        ></image>
+      </button>
+    </view>
+
+    <view class='blessingBox'>
+      <view class='blessb'>      
+        <view class="blessingItem"  wx:for="{{blessingData}}" wx:key="unique">
+          <view class="minicov">
+            <image class="covImg" src="{{item.avatarUrl}}" mode="cover"></image>
+          </view>
+          <text class="messs">{{item.message}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

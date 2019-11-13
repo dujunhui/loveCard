@@ -1,0 +1,47 @@
+<view class="component_page">
+  <!-- <button type="primary" bindtap="showPop">primary</button>   -->
+  
+  <image class="indexBg" src="/img/indexbg.jpg" mode="aspectFill"></image>
+
+
+
+  <view class="cardBox" bindtap="openMap">
+    <view class="cardBg" animation="{{animationData}}">
+      <view class="boxLine"></view>
+    </view>
+    <view class="timeBox">
+      <view class="tbox" animation="{{animationDataTimeBox}}"></view>
+    </view>
+    <text class="time" animation="{{animationDataTime}}">农历五月廿八阳历6月30日12点00分</text>
+    <view class='jiudianBox'>
+      <image class="icoAddr" src="/img/ico_addr.png" mode="aspectFill"></image>
+      <text class="jiudian" animation="{{animationDataJd}}">长长长酒店</text>
+    </view>
+    
+    <image class="we" src="/img/we.png" mode="widthFix" animation="{{animationDataWe}}"></image>
+    <text class="du" animation="{{animationDataDu}}">杜军辉</text>
+    <text class="chang" animation="{{animationDataChang}}">常 婕</text>
+    <view class="yeziBox">    
+       <image class="yezi" src="/img/yezi.png" mode="widthFix" animation="{{animationDataYezi}}"></image>
+    </view>    
+  </view>
+
+  <!-- 地图层 -->
+  <view class="mapBox" wx:if="{{ifMapShow}}">
+    <view class='closeBox' bindtap="openMap">
+      <image class='closeBtn' src='/img/ico_close2.png' mode="aspectFill"></image>
+    </view>
+    <map 
+      style="width: 100%;height: 100%;"
+      id="myMap"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}"
+      markers="{{markers}}"
+      scale="19"
+      show-location
+      bindmarkertap="makertap"
+    ></map>
+  </view>
+ 
+
+</view>

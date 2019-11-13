@@ -1,0 +1,25 @@
+
+<!-- 旋转播CD -->
+<image mode="aspectFit" src="../../img/music.png" class="rotateBox" animation="{{animation}}" bindtap="musicTap"></image >
+
+<!-- 组件显示 -->
+<view hidden="{{currentTab == 0? false: true}}">
+  <component_index id="componentIndex"/>
+</view>
+<view hidden="{{currentTab == 1? false: true}}">
+  <component_my id="componentMy"/>
+</view>
+<view hidden="{{currentTab == 2? false: true}}">
+  <component_diary/>
+</view>
+<view hidden="{{currentTab == 3? false: true}}">
+  <component_vs/>
+</view>
+
+<!-- 自定义 tabbar -->
+<view class="nav-tabs-bg"></view>
+<view class="nav-tabs">
+  <view class="tab-list {{currentTab == idx ? 'active' : 'default' }}" wx:for="{{items}}" wx:key="prototype" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">
+    <image class="iconPath" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}"></image>
+  </view>
+</view>

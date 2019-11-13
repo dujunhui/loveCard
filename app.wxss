@@ -1,0 +1,15 @@
+/**app.wxss**/
+/**小程序公共样式表**/
+@import "/lib/animate.wxss";
+page{
+  height:100%;
+  overflow:hidden;
+}
+.component_page{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+image{height:auto}

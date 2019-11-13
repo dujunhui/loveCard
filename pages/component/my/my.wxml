@@ -1,0 +1,174 @@
+<view class="component_page">
+
+  <swiper
+          indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          interval="{{interval}}"
+          duration="{{duration}}"
+          vertical="{{vertical}}"
+          current="{{current}}"
+          bindchange="swiperChange"
+          bindtransition="swipertransition"
+          bindanimationfinish="swiperanimationfinish"
+  >
+    <!-- page1  -->
+    <block>   
+      <swiper-item>
+        <view class="p1-1 animated slow opc0 {{current==0?'fadeInLeft':''}}">
+          <image
+            class="img"
+            src="/img/my/p1-1.jpg"
+            mode="aspectFill"
+          ></image>
+        </view>
+        <view class="p1-2 animated slow opc0 {{current==0?'fadeInRight':''}}">
+          <image
+            class="img"
+            src="/img/my/p1-2.jpg"
+            mode="aspectFill"
+          ></image>
+        </view>
+        <view class="p1-3Box">
+          <view class="p1-3 animated slow opc0 {{current==0?'fadeInRight':''}}">
+            <image
+              class="img"
+              src="/img/my/p1-3.png"
+              mode="aspectFill"
+            ></image>
+            <image
+              class="icop1-4"
+              src="/img/my/p1-4.png"
+              mode="aspectFill"
+            ></image>
+            <image
+              class="icop1-5"
+              src="/img/my/p1-5.png"
+              mode="aspectFill"
+            ></image>
+          </view>
+        </view>
+        
+      </swiper-item>
+    </block> 
+    <!------------- page2  ------------------>
+    <block>   
+      <swiper-item>
+
+          <view class="p2-1">
+            <view class="p2-1-imgBox slow opc0 animated {{current==1?'fadeInDown':''}}">
+              <image
+                class="img"
+                src="/img/my/p2-1.jpg"
+                mode="aspectFill"
+              ></image>
+            </view>
+            <!-- icon -->
+            <view class="ico-fang-bg slow opc0 animated {{current==1?'fadeInDown':''}}">
+              <image
+                class="img"
+                src="/img/my/p2-8.png"
+                mode="aspectFill"
+              ></image>
+              <view class="ico-fang-i1">
+                <image
+                    class="img"
+                    src="/img/my/p2-7.png"
+                    mode="aspectFill"
+                ></image>
+              </view>
+              <view class="ico-fang-i2">
+                <image
+                    class="img"
+                    src="/img/my/p2-6.png"
+                    mode="aspectFill"
+                ></image>
+              </view>
+            </view>
+          </view>
+          <view class="p2-2">
+            <view class="p2-3Box slow opc0 animated {{current==1?'fadeInLeft':''}}">
+              <image
+                  class="img"
+                  src="/img/my/p2-2.jpg"
+                  mode="aspectFill"
+              ></image>
+            </view>
+            <view class="p2-3Box slow opc0 animated {{current==1?'fadeInRight':''}}">
+              <image
+                    class="img"
+                    src="/img/my/p2-3.jpg"
+                    mode="aspectFill"
+                ></image>
+            </view>
+          </view>
+    
+      </swiper-item>
+    </block> 
+    <!------------------- page3  -------------------->
+    <block>   
+      <swiper-item>
+
+          <view class="p3-1Box slow opc0 animated {{current==2?'fadeInRight':''}}">
+            <image
+              class="p3-1Img img"
+              src="/img/my/p3-1.jpg"
+              mode="aspectFill"
+            ></image>
+          </view>
+          <view class="p3-2Box slow opc0 animated {{current==2?'fadeInLeft':''}}">
+            <image
+              class="p3-2Img img"
+              src="/img/my/p3-2.jpg"
+              mode="aspectFill"
+            ></image>
+          </view>
+          <view class="p3-iconBox slow opc0 animated {{current==2?'fadeInDown':''}}">
+            <image
+              class="p3-icon"
+              src="/img/my/p3-3.png"
+              mode="aspectFill"
+            ></image>
+          </view>
+       
+      </swiper-item>
+    </block> 
+    
+     <!-- page4  -->
+    <block>   
+    <swiper-item>
+
+      <view class="p4-1Box slow opc0 animated {{current==3?'fadeInRight':''}}">
+        <image
+          class="img"
+          src="/img/my/p4-1.jpg"
+          mode="aspectFill"
+        ></image>
+      </view>
+      <view class="p4-2Box slow opc0 animated {{current==3?'fadeInLeft':''}}">
+        <image
+          class="img"
+          src="/img/my/p4-2.jpg"
+          mode="aspectFill"
+        ></image>
+      </view>
+      <view class="p4-3Box slow opc0 animated {{current==3?'fadeInRight':''}}">
+        <image
+          class="img"
+          src="/img/my/p4-3.jpg"
+          mode="aspectFill"
+        ></image>
+      </view> 
+
+      <view class="p4-iconBox slow opc0 animated {{current==3?'fadeInRight':''}}">
+        <image
+          class="img"
+          src="/img/my/p4-1.png"
+          mode="aspectFill"
+        ></image>
+      </view>
+    </swiper-item>
+  </block> 
+
+  </swiper>
+
+</view>

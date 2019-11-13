@@ -1,0 +1,81 @@
+/**index.wxss**/
+page {
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f9;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 底部导航条tabbar */
+.nav-tabs-bg{
+width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;  
+  height: 119rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.nav-tabs {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;  
+}
+
+.nav-tabs .tab-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 119rpx;
+  border-top: 1rpx solid #eaeaec
+}
+
+.nav-tabs .iconPath {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+/* 默认效果 */
+.nav-tabs .default {
+  text-align: center;
+  flex: 1;
+}
+/* 选中效果 */
+.nav-tabs .active {
+  text-align: center;
+  flex: 1;
+}
+
+.rotateBox {
+  position: absolute;
+  top: 65rpx;
+  left: 30rpx;
+  z-index: 2;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  height: 80rpx;
+  width: 80rpx;
+  /* border-radius: 50rpx; */
+  /* animation: musicRotate 6s linear infinite */
+}
+
+/* 旋转效果  */
+@keyframes musicRotate{
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.show {
+  display: block;
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+  flex: 1;
+}

@@ -1,0 +1,98 @@
+<view class="component_page">
+  <scroll-view scroll-y style="height:100%">
+    <view class="lineBox">
+      <view class="topTitle">
+        <view class="cir"></view> <text class="lineTime">2018年1月</text>
+      </view>
+      <view class="topText"><text>遇见美好时光</text></view>
+      <scroll-view class="imgBox" scroll-x>
+        <image
+          class="img"
+          wx:for="{{imgArr201801s}}"
+          wx:for-index="idx"
+          wx:key="unique"
+          src="{{item}}"
+          data-src="{{imgArr201801[idx]}}"
+          bindtap="showPreview"
+          mode="aspectFill" 
+        ></image>
+      </scroll-view>
+      
+
+      <view class="topTitle">
+        <view class="cir"></view> <text class="lineTime">2018年4月</text>
+      </view>
+      <view class="topText"><text>欧乐堡 海底世界之行</text></view>
+      <scroll-view class="imgBox" scroll-x>
+        <image 
+          class="img"
+          wx:for="{{imgArr201804s}}"
+          wx:for-index="idx"
+          wx:key="unique"
+          src="{{item}}" 
+          data-src="{{imgArr201804[idx]}}"
+          bindtap="showPreview2"
+          mode="aspectFill"
+        ></image>
+      </scroll-view>
+
+
+      <view class="topTitle">
+        <view class="cir"></view> <text class="lineTime">2018年10月</text>
+      </view>
+      <view class="topText"><text>十一西安之旅</text></view>
+      <scroll-view class="imgBox" scroll-x>
+        <image 
+          class="img"
+          wx:for="{{imgArr201810s}}"
+          wx:for-index="idx"
+          wx:key="unique"
+          src="{{item}}" 
+          data-src="{{imgArr201810[idx]}}"
+          bindtap="showPreview3"
+          mode="aspectFill"
+        ></image>
+      </scroll-view>
+
+      <view class="topTitle">
+        <view class="cir"></view> <text class="lineTime">2018年10月</text>
+      </view>
+      <view class="topText"><text>我们结婚啦</text></view>
+      <scroll-view class="imgBoxW" scroll-x>
+        <image 
+          class="imgW"
+          wx:for="{{imgArr20181011s}}"
+          wx:for-index="idx"
+          wx:key="unique"
+          src="{{item}}" 
+          data-src="{{imgArr20181011[idx]}}"
+          bindtap="showPreview4"
+          mode="aspectFill"
+        ></image>
+      </scroll-view>
+
+      <view class="topTitle">
+        <view class="cir"></view> <text class="lineTime">2019年5月</text>
+      </view>
+      <view class="topText"><text>里口山之行</text></view>
+      <scroll-view class="imgBoxW" scroll-x>
+        <image 
+          class="imgW"
+          wx:for="{{imgArr201905s}}"
+          wx:for-index="idx"
+          wx:key="unique"
+          src="{{item}}" 
+          data-src="{{imgArr201905[idx]}}"
+          bindtap="showPreview5"
+          mode="aspectFill"
+        ></image>
+      </scroll-view>
+
+      <view class="topTitle">
+        <view class="cir"></view> <text class="lineTime">2019年6月30日</text>
+      </view>
+      <view class="topText bottomBox"><text>我们依然在路上...</text></view>
+    </view>
+  </scroll-view>
+  
+</view>

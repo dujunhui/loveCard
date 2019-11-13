@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "component_index": "/pages/component/index/index",
+    "component_my": "/pages/component/my/my",
+    "component_diary": "/pages/component/diary/diary",
+    "component_vs": "/pages/component/vs/vs"
+  }
+}

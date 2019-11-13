@@ -1,0 +1,166 @@
+
+.topImgBox{
+  height: 620rpx;
+}
+
+.topImgBox .img{
+  flex: 1 0 auto;
+}
+
+.btnBox{
+  height: 112rpx;
+  position: relative;
+}
+.leftBtn{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.rightBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.conBox{
+  margin-top: 30rpx;
+}
+.leftCon{
+  display: inline-block;
+  width: 50%;
+}
+.rightCon{
+  display: inline-block;
+  width: 50%;
+}
+
+.lc-top, .rc-top{
+  text-align: center;
+  padding-top: 10rpx;
+  font-size: 50rpx;
+}
+
+/* 赞 */
+.zanBox{
+  position: relative;
+  height: 150rpx;
+}
+.userinfo-avatar {
+  position: absolute;
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  border: 5rpx solid #fff;
+}
+.u1{
+  left: 50rpx;
+  top: 10rpx;
+  z-index: 3;
+}
+.u2{
+  left: 130rpx;
+  top: 10rpx;
+  z-index: 2;
+}
+.u3{
+  left: 210rpx;
+  top: 10rpx;
+  z-index: 1;
+}
+
+/* 输入框 */
+.inputBox{
+  position: relative;
+  padding-left: 30rpx;
+  height: 120rpx;
+  border: 1rpx solid #dd0206;
+  box-sizing: border-box;
+  width: 650rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.inputView{
+  height:120rpx;
+  min-height:120rpx;
+  line-height:120rpx;
+  width: 450rpx;
+  display: inline-block
+}
+.submitBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150rpx;
+  height: 116rpx;
+  padding: 0;
+  margin: 0;
+  float: right;
+  border-radius: 0;
+  background-color: #dd0206;
+}
+
+/* 跑马灯 */
+.blessingBox{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 40rpx;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  margin-bottom: 150rpx;
+}
+.blessb{
+  display: inline-block;
+  position: relative;
+  white-space:nowrap;
+  animation: kf-marque-animation 100s linear infinite;
+}
+@keyframes kf-marque-animation{
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-80%); }
+}
+.blessingItem{
+  display: inline-block;
+  height: 80rpx;
+  margin-right:50rpx;
+}
+.minicov{
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  border: 3rpx solid #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.covImg{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.messs{
+  display: inline-block;
+  line-height: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
